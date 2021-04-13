@@ -4,7 +4,7 @@ save them to 'trained_models' folder as 'c3d_sports1m.h5'.
 
 Run test_detect.py to run the code on the demo video in 'input' folder. Visualization of the predictions from the model is saved in 'output' folder.
 
-#Libraries Used
+##Libraries Used
 
 * Keras : 2.2.0 
 * Tensorflow : 1.10.1
