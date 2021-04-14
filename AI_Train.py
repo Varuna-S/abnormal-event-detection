@@ -11,7 +11,7 @@ from os import listdir
 import numpy as np
 import numpy
 from datetime import datetime
-
+import configuration as cfg
 
 
 
@@ -126,12 +126,6 @@ def load_dataset_Train_batch(AbnormalPath, NormalPath):
     return  AllFeatures,AllLabels
 
 
-# Custom loss function - MIL ranking loss
-
-
-
-
-#For custom loss function - ref = https://towardsdatascience.com/advanced-keras-constructing-complex-custom-losses-and-metrics-c07ca130a618. 
 
 def custom_objective(y_true, y_pred):
 
@@ -200,9 +194,9 @@ def custom_objective(y_true, y_pred):
 
 # Path contains C3D features (.txt file) of each video.
 # Each text file contains 32 features, each of 4096 dimension
-AllClassPath='C:\\Users\\Var\\Downloads\\Compressed\\anomaly-detection-master\\anomaly-detection-master\\out\\'
+AllClassPath= cfg.AllClassPath
 
-output_dir='C:\\Users\\Var\\Downloads\\Compressed\\anomaly-detection-master\\anomaly-detection-master\\trained_model\\'
+output_dir=cfg.trainedModelOut
 
 # Output_dir save trained weights and model.
 

@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 """C3D model for Keras
-
-# Reference:
-
-- [Learning Spatiotemporal Features with 3D Convolutional Networks](https://arxiv.org/abs/1412.0767)
-
-Based on code from @albertomontesg
 """
 
 import keras.backend as K

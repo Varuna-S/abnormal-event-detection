@@ -2,7 +2,7 @@ import os
 from c3d import *
 from classifier import *
 from utils.visualization_util import *
-
+import configuration as cfg
 
 def run_demo():
 
